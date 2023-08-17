@@ -1,7 +1,18 @@
 body{
-	background-color: #00FCFF;
+	font-family: monospace;
 }
-#hasil, #hasilluas{
-	background-color: #FFF;
-	border: 2px solid #0C00FF;
+
+header {
+	background-color: aqua;
+	color: aliceblue;
+	text-align: center;
+	margin-left: 100px;
+	margin-right: 100px;
+	border-radius: 10px;
 }
+
+.input-section {
+	display: flex;
+	flex-direction: column;
+}
+
