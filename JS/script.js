@@ -1,11 +1,16 @@
-const alas = document.getElementById('alas')
-const tinggi = document.getElementById('tinggi')
-const hitung = document.getElementById('hitung')
-const output = document.getElementById('output')
-hitung.addEventListener('click', function(){
-    let a = alas.value
-    let t = tinggi.value
-    let l = 0.5*a*t
+const inputField = document.getElementById("tinggi-input");
+const button = document.getElementById("count-button")
+
+inputField.addEventListener('input', function(){
+    const inputValue = inputField.value
+
+    if (inputValidation(inputValue)) {
+        console.log("success")
+        button.disabled = false
+    } else {
+        console.log("fail")
+        button.disabled = true
+    }
 
     output.innerHTML = 'Luas segitiga dari alas $(alas) cm dan tinggi $(tinggi)'
 })
